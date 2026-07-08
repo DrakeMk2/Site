@@ -1,0 +1,254 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Высотники — промышленный альпинизм в Москве{% endblock %}
+
+{% block content %}
+
+    {# ==================== HERO ==================== #}
+    <section class="relative bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white overflow-hidden">
+        {# Декоративный фоновый паттерн #}
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-300 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                    Промышленный альпинизм<br>
+                    <span class="text-brand-300">на высшем уровне</span>
+                </h1>
+                <p class="mt-6 text-lg sm:text-xl text-brand-100 max-w-2xl leading-relaxed">
+                    Высотные работы любой сложности: монтаж, ремонт фасадов, мойка окон,
+                    герметизация швов. Работаем в Москве и области с 2010 года.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="#feedback-form"
+                       class="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-700 font-bold text-lg rounded-xl hover:bg-brand-50 transition-colors shadow-lg">
+                        Оставить заявку
+                    </a>
+                    <a href="#about"
+                       class="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white font-semibold text-lg rounded-xl hover:bg-white/10 transition-colors">
+                        О компании
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {# Волна-разделитель #}
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-12 sm:h-20">
+                <path d="M0 80L60 66.7C120 53.3 240 26.7 360 20C480 13.3 600 26.7 720 33.3C840 40 960 40 1080 33.3C1200 26.7 1320 13.3 1380 6.7L1440 0V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0V80Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+
+    {# ==================== О КОМПАНИИ ==================== #}
+    <section id="about" class="py-20 sm:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    Почему выбирают нас
+                </h2>
+                <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+                    Более 14 лет опыта в сфере промышленного альпинизма. Качество, безопасность и надёжность — наши главные принципы.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {# Карточка 1: Опыт #}
+                <div class="group p-8 bg-gray-50 rounded-2xl hover:bg-brand-50 hover:shadow-lg transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-brand-200 transition-colors">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Опыт</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Более 14 лет на рынке. Выполнили свыше 2&nbsp;000 объектов различной сложности.
+                    </p>
+                </div>
+
+                {# Карточка 2: Безопасность #}
+                <div class="group p-8 bg-gray-50 rounded-2xl hover:bg-brand-50 hover:shadow-lg transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-brand-200 transition-colors">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Безопасность</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Сертифицированное снаряжение, строгий инструктаж, страховка каждого сотрудника.
+                    </p>
+                </div>
+
+                {# Карточка 3: Качество #}
+                <div class="group p-8 bg-gray-50 rounded-2xl hover:bg-brand-50 hover:shadow-lg transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-brand-200 transition-colors">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Качество</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Используем профессиональные материалы и технологии. Гарантия на все виды работ.
+                    </p>
+                </div>
+
+                {# Карточка 4: Оперативность #}
+                <div class="group p-8 bg-gray-50 rounded-2xl hover:bg-brand-50 hover:shadow-lg transition-all duration-300">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-brand-200 transition-colors">
+                        <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Оперативность</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Выезд на объект в день обращения. Сжатые сроки без потери качества.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {# ==================== КОНТАКТЫ ==================== #}
+    <section id="contacts" class="py-20 sm:py-28 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    Контакты
+                </h2>
+                <p class="mt-4 text-lg text-gray-500 max-w-2xl mx-auto">
+                    Свяжитесь с нами удобным способом — мы на связи ежедневно с 9:00 до 21:00.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                {# Телефон #}
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Телефон</h3>
+                    <a href="tel:+74951234567" class="text-brand-600 hover:text-brand-700 font-medium">
+                        +7 (495) 123-45-67
+                    </a>
+                </div>
+
+                {# Email #}
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Email</h3>
+                    <a href="mailto:info@vysotniki.ru" class="text-brand-600 hover:text-brand-700 font-medium">
+                        info@vysotniki.ru
+                    </a>
+                </div>
+
+                {# Адрес #}
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Адрес</h3>
+                    <p class="text-gray-500">
+                        г. Москва, ул. Строителей, д. 15, офис 302
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {# ==================== ФОРМА ЗАЯВКИ ==================== #}
+    <section id="feedback-form" class="py-20 sm:py-28 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    Оставьте заявку
+                </h2>
+                <p class="mt-4 text-lg text-gray-500">
+                    Опишите задачу, и мы свяжемся с вами в ближайшее время для расчёта стоимости.
+                </p>
+            </div>
+
+            <form method="post" action="{% url 'home' %}" class="bg-gray-50 rounded-2xl p-8 sm:p-10 shadow-sm">
+                {% csrf_token %}
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {# Имя #}
+                    <div>
+                        <label for="id_name" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Имя <span class="text-red-500">*</span>
+                        </label>
+                        <input type="text" name="name" id="id_name" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors"
+                               placeholder="Ваше имя">
+                    </div>
+
+                    {# Телефон #}
+                    <div>
+                        <label for="id_phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Телефон <span class="text-red-500">*</span>
+                        </label>
+                        <input type="tel" name="phone" id="id_phone" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors"
+                               placeholder="+7 (___) ___-__-__">
+                    </div>
+                </div>
+
+                {# Email #}
+                <div class="mt-6">
+                    <label for="id_email" class="block text-sm font-semibold text-gray-700 mb-2">
+                        Email
+                    </label>
+                    <input type="email" name="email" id="id_email"
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors"
+                           placeholder="your@email.ru">
+                </div>
+
+                {# Сообщение #}
+                <div class="mt-6">
+                    <label for="id_message" class="block text-sm font-semibold text-gray-700 mb-2">
+                        Сообщение <span class="text-red-500">*</span>
+                    </label>
+                    <textarea name="message" id="id_message" rows="5" required
+                              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors resize-y"
+                              placeholder="Опишите задачу: тип работ, площадь, высота, адрес объекта..."></textarea>
+                </div>
+
+                {# Кнопка отправки #}
+                <div class="mt-8">
+                    <button type="submit"
+                            class="w-full sm:w-auto px-10 py-4 bg-brand-600 text-white font-bold text-lg rounded-xl hover:bg-brand-700 transition-colors shadow-lg shadow-brand-600/25">
+                        Отправить заявку
+                    </button>
+                </div>
+
+                <p class="mt-4 text-sm text-gray-400 text-center">
+                    Нажимая кнопку, вы соглашаетесь на обработку персональных данных.
+                </p>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
