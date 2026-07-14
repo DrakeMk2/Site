@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Высотники — промышленный альпинизм{% endblock %}</title>
+
+    {# Favicon #}
+    <link rel="icon" type="image/gif" href="{% static 'Favicon.gif' %}">
 
     {# Tailwind CSS Play CDN #}
     <script src="https://cdn.tailwindcss.com"></script>
@@ -42,16 +46,17 @@
         html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+<body class="text-gray-800 font-sans antialiased flex flex-col min-h-screen" style="background: url('{% static 'tech_back.gif' %}') center/cover fixed;">
 
     {# Шапка #}
     <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 {# Логотип #}
-                <a href="{% url 'home' %}" class="flex items-center space-x-2">
-                    <span class="text-2xl font-extrabold text-brand-600 tracking-tight">
-                        🏔️ Высотники
+                <a href="{% url 'home' %}" class="flex items-center space-x-3">
+                    <img src="{% static 'Favicon.gif' %}" alt="Высотники" class="h-10 w-10 rounded-lg object-cover">
+                    <span class="text-xl font-extrabold text-brand-600 tracking-tight">
+                        Высотники
                     </span>
                 </a>
 
@@ -131,9 +136,12 @@
     <footer class="bg-gray-900 text-gray-400 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <p class="text-sm">
-                    &copy; {% now "Y" %} Высотники. Все права защищены.
-                </p>
+                <div class="flex items-center space-x-3">
+                    <img src="{% static 'Favicon.gif' %}" alt="Высотники" class="h-8 w-8 rounded opacity-75">
+                    <p class="text-sm">
+                        &copy; {% now "Y" %} Высотники. Все права защищены.
+                    </p>
+                </div>
                 <p class="text-sm mt-2 md:mt-0">
                     Промышленный альпинизм — безопасность на высоте.
                 </p>
