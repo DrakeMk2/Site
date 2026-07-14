@@ -1,27 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Высотники — промышленный альпинизм в Москве{% endblock %}
+{% block title %}Высотники — промышленный альпинизм в Санкт-Петербурге{% endblock %}
 
 {% block content %}
 
     {# ==================== HERO ==================== #}
-    <section class="relative bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white overflow-hidden">
-        {# Декоративный фоновый паттерн #}
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-brand-300 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
-        </div>
+    <section class="relative text-white overflow-hidden" style="background: url('{% static 'tech_back.gif' %}') center/cover;">
+        {# Затемняющий оверлей для читаемости текста #}
+        <div class="absolute inset-0 bg-brand-900/35"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
             <div class="max-w-3xl">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">
                     Промышленный альпинизм<br>
-                    <span class="text-brand-300">на высшем уровне</span>
+                    <span class="text-brand-300 [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">на высшем уровне</span>
                 </h1>
-                <p class="mt-6 text-lg sm:text-xl text-brand-100 max-w-2xl leading-relaxed">
+                <p class="mt-6 text-lg sm:text-xl text-brand-100 max-w-2xl leading-relaxed [text-shadow:0_1px_4px_rgba(0,0,0,0.5)]">
                     Высотные работы любой сложности: монтаж, ремонт фасадов, мойка окон,
-                    герметизация швов. Работаем в Москве и области с 2010 года.
+                    герметизация швов. Работаем в Санкт-Петербурге и Ленинградской области с 2010 года.
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row gap-4">
                     <a href="#feedback-form"
@@ -171,7 +168,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">Адрес</h3>
                     <p class="text-gray-500">
-                        г. Москва, ул. Строителей, д. 15, офис 302
+                        г. Санкт-Петербург, ул. Строителей, д. 15, офис 302
                     </p>
                 </div>
             </div>
