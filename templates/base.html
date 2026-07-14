@@ -44,9 +44,12 @@
 
     <style>
         html { scroll-behavior: smooth; }
+        body {
+            background: var(--bg-image) center/cover fixed;
+        }
     </style>
 </head>
-<body class="text-gray-800 font-sans antialiased flex flex-col min-h-screen" style="background: url('{% static 'tech_back.gif' %}') center/cover fixed;">
+<body class="text-gray-800 font-sans antialiased flex flex-col min-h-screen" style="--bg-image: url('{% static 'tech_back.gif' %}');">
 
     {# Шапка #}
     <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
